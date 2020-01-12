@@ -1,5 +1,6 @@
 # ppk-nrf91
-How to use Nordic Power profiling kit with nRF91 DK
+How to use Nordic Power profiling kit with nRF91 DK: the example of configuration where we have PPK working with onboard regulator and providing power supply for external DUT (NRF91 DK). At the same time NRF91 is working with AT command firmware and LTE link monitor
+
 
 There are several ways to measure current on the nRF91 development kit (nRF91-DK) using various test equipment like Power analyzer, Oscilloscope, and Ampere-meter. All of them use the same connector with some external hardware and that is quite well explained in the Nordic documentation section ["Measuring current" of the nRF9160][currnet_mes]. Because we want to use Nordic Power Profiling Kit (nRF-PPK) with nRF91-DK we need to think of it as an external power supply case form the Nordic nRF91-DK documentation. 
 The picture below shows the connection between nRF-PPK and nRF91-DK.
@@ -20,6 +21,8 @@ When everything is connected [nRF Connect for desktop software][nrf_connect_desk
 <p align="center">
   image 2: apps</center>
 </p>
+
+Using on-board power regulator is a good option because there is an option in the software to change the power voltage of the DUT system. 
 
 ## Setup tools:
 * PC with Windows OS (probably possible on thher OS but not tested)
